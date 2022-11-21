@@ -1,0 +1,53 @@
+#page-1 h1 {
+  transform: translateY(-200px);
+  animation: title-animate var(--animate-speed) forwards ease-in-out;
+  opacity: 0%;
+}
+
+
+@keyframes title-animate {
+  80% {
+    opacity: 0%;
+  }
+  
+  90% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+#page-1 p {
+  transform: translateX(-200px);
+  animation: paragraph-animate var(--animate-speed-2) forwards ease-in-out;
+  opacity: 0%;
+}
+
+@keyframes paragraph-animate {
+  80% {
+    opacity: 0%;
+  }
+  
+  90% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+#page-1 .btn {
+  animation: animate-btn var(--animate-speed) forwards ease-in-out 2.5s;
+  opacity: 0%;
+}
+
+@keyframes animate-btn {
+  100% {
+    opacity: 100%;
+  }
+}
